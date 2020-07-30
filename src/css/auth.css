@@ -3,7 +3,6 @@ font-family: 'Teko', sans-serif; */
 /* font family references */
 
 body {
-  background-image: url("../components/img/ss_1a7f5508e5384a759ccc83fa484db04513213698.1920x1080.jpg");
   margin: 2%;
 }
 h1 {
@@ -27,12 +26,12 @@ h1 {
 .signupBox,
 .loginBox {
   margin-top: 5%;
-  border: white 1px solid;
+  border: cyan 1px solid;
   width: 50%;
   display: flex;
   justify-content: center;
   padding: 1%;
-  background-color: rgba(255, 255, 255, 0.349);
+  background-color: rgba(255, 255, 255, 0.274);
   flex-direction: column;
   font-family: "Dosis", sans-serif;
 }

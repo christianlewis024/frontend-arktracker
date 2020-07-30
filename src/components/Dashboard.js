@@ -7,6 +7,8 @@ import UsersDinos from "./UsersDinos";
 import AddItem from "./AddItem";
 import UsersItems from "./UsersItems";
 import "../css/auth.css";
+import "../css/dash.css";
+import bgimg from "./img/hexagons.jpg";
 
 const Dashboard = () => {
   const [posts, setPosts] = useState([]);
@@ -27,21 +29,29 @@ const Dashboard = () => {
   };
   return (
     <div className="body">
+      <img src={bgimg} className="bgimg" />
       <div className="banner">
         <p>Welcome to Ark Tracker. Please Keep track of your tame stats.</p>
 
-        <button onClick={logout}>Log Out</button>
-
-        <div>
-          <AddDino />
+        <button onClick={logout} className="logout">
+          Log Out
+        </button>
+      </div>
+      <div className="dinosAndItems">
+        <div className="dinoComp">
+          <div className="addDino">
+            <AddDino />
+          </div>
+          <UsersDinos />
+        </div>
+        <div className="itemComp">
+          <br></br>
+          <div className="addItem">
+            <AddItem />
+          </div>
+          <UsersItems />
         </div>
       </div>
-      {/* <DinoList dinos={posts} /> */}
-      <UsersDinos />
-      <h3>Items!! </h3>
-      <br></br>
-      <AddItem />
-      <UsersItems />
     </div>
   );
 };
