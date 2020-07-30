@@ -3,6 +3,7 @@ import * as yup from "yup";
 import { useHistory } from "react-router-dom";
 import axiosWithAuth from "../utils/AxiosWithAuth";
 import logo from "./img/mainlogo.png";
+import bgimg from "./img/hexagons.jpg";
 let SignUp = () => {
   let history = useHistory();
   const [signUpFormState, setSignUpFormState] = useState({
@@ -71,6 +72,7 @@ let SignUp = () => {
   };
   return (
     <div className="signup-wrapper">
+      <img src={bgimg} className="bgimg" />
       <div className="logo">
         <img src={logo}></img>
       </div>

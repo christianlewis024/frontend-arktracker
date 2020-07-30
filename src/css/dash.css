@@ -1,0 +1,72 @@
+.bgimg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+body {
+  color: cyan;
+}
+button {
+  width: 103%;
+  background-color: grey;
+  color: cyan;
+  height: 45px;
+  border: 2px solid black;
+  text-decoration: underline;
+}
+.logout {
+  width: 20%;
+}
+input {
+  background-color: cyan;
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+}
+/* box for positioning whole page */
+.dinosAndItems {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* common styling to stay the same for both items and dinos */
+.dinoComp,
+.itemComp {
+  width: 45%;
+
+  font-weight: bolder;
+}
+/* common styling to stay the same for both items and dinos */
+.addDino,
+.addItem {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+/* dino specific styling */
+.dinoStatBox {
+  display: flex;
+  margin: 0 auto;
+  /* border: 4px solid black; */
+  border-radius: 10px;
+  justify-content: center;
+}
+.splitter {
+  margin: 4%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.dino_input {
+  background-color: rgba(255, 255, 255, 0.185);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  padding: 1%;
+  display: flex;
+  border: 2px solid cyan;
+}

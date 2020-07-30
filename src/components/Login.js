@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { LOGIN_START, LOGIN_SUCCESS, LOGIN_FAILURE } from "../actions/index";
 import logo from "./img/mainlogo.png";
+import bgimg from "./img/hexagons.jpg";
 
 const initialState = {
   username: "",
@@ -34,6 +35,7 @@ const Login = (props) => {
 
   return (
     <div>
+      <img src={bgimg} className="bgimg" />
       <div className="login-wrapper">
         <div className="logo">
           <img src={logo}></img>
